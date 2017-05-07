@@ -33,7 +33,7 @@ app.get(RegExp(/\/new\/[\s\S]*/g),function(request, response) {
 			});
 			response.end(JSON.stringify({
 				"original_url": originalURL,
-				"shortened_url": shortenedURL
+				"shortened_url": "https://frozen-meadow-99188.herokuapp.com/" + shortenedURL
 			}));
 			db.close();
 		}
